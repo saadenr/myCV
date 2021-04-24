@@ -64,4 +64,50 @@ html{
 .navbar.sticky .lista li a:hover{
     color: #fff;
 }
-  
+
+
+/*////////////////////////////////////////////////   home section styling   ////////////////////////////////////////////////////////////////*/
+.home{
+    display: flex;
+    background: url("images/banner3.jpg") no-repeat center;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Exo 2', sans-serif;
+}
+.home .max-width{
+    margin: auto 0 auto 30px;
+}
+
+.home .home-main .big-text{
+    color: #3c9012;
+    font-size: 70px;
+    font-weight: 600;
+}
+.home .home-main .med-text{
+    font-size: 60px;
+    margin: 5px 0;
+}
+.home .home-main a{
+    display: inline-block;
+    background: #3c9012;
+    color: #fff;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    font-weight: 400;
+    border-radius: 6px;
+    border: 2px solid #fff;
+    transition: all 0.3s ease;
+    margin-left: 60%;
+}
+.home .home-main a:hover{
+    color: #3c9012;
+    background: none;
+    border: 2px solid #3c9012;
+}
+.fa-level-down-alt{
+    margin-left: 20px;
+}
