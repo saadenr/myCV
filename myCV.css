@@ -42,11 +42,11 @@ html{
     margin-top: 5px;
     width: auto;
 }
-.navbar .menu li{
+.navbar .lista li{
     list-style: none;
     display: inline-block;
 }
-.navbar .menu li a{
+.navbar .lista li a{
     display: block;
     color: #fff;
     font-size: 18px;
@@ -55,12 +55,13 @@ html{
     transition: color 0.3s ease;
 }
 
-.navbar .menu li a:hover{
+.navbar .lista li a:hover{
     color: #111;
 }
-.navbar .menu li a:active{
+.navbar .lista li a:active{
     color: #333;
 }
-.navbar.sticky .menu li a:hover{
+.navbar.sticky .lista li a:hover{
     color: #fff;
 }
+  
