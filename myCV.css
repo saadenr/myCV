@@ -12,6 +12,39 @@ html{
     scroll-behavior: smooth;
 }
 
+/*///////////////////////////////////////  all similar content styling codes ////////////////////////////////////////////////////////////*/
+section{
+    padding: 100px 0;
+}
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+.about, .projects, .skills, .education, .contact, footer{
+    font-family: 'Baloo Chettan 2', cursive;
+    font-size: 19px;
+}
+.about .about-main, 
+.projects .serv-content,
+.skills .skills-content,
+.contact .contact-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+section .titre{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 60px;
+    padding: 10px 16px;
+    font-family: 'Exo 2', sans-serif;
+    border: 3px solid #111;
+}
+
 /*////////////////////////////////////////////////////////   navbar styling   /////////////////////////////////////////////////////////////*/
 .navbar{
     position: fixed;
@@ -53,6 +86,10 @@ html{
     font-weight: 500;
     margin-left: 25px;
     transition: color 0.3s ease;
+}
+
+.navbar .lista li a .fas{
+    margin-right: 10px;
 }
 
 .navbar .lista li a:hover{
@@ -109,5 +146,50 @@ html{
     border: 2px solid #3c9012;
 }
 .fa-level-down-alt{
+    margin-left: 20px;
+}
+
+/*////////////////////////////////////////////////   about section styling   //////////////////////////////////////////////////////////////*/
+.about .about-main .part-2{
+    width: 35%;
+}
+.about .about-main .part-2 img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+    box-shadow: 5px 5px 15px 5px lightslategrey;
+    border: 5px solid #111;
+    
+}
+.about .about-main .part-1{
+    width: 55%;
+}
+.about .about-main .part-1 .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.about .about-main .part-1 p{
+    text-align: justify;
+}
+.about .about-main .part-1 a{
+    background: #3c9012;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid #3c9012;
+    transition: all 0.3s ease;
+    float: right;
+}
+.about .about-main .part-1 a:hover{
+    color: #3c9012;
+    background: none;
+}
+.about .about-main .part-1 a .fa-download{
     margin-left: 20px;
 }
