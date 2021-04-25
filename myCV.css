@@ -50,15 +50,12 @@ section .titre{
     position: fixed;
     width: 100%;
     z-index: 999;
-    padding: 6px 0;
+    /* padding: 6px 0; */
     font-family: 'Exo 2', sans-serif;
     transition: all 0.3s ease;
     background-color: #3c9012;
 }
-.navbar.sticky{
-    padding: 15px 0;
-    background: #3c9012;
-}
+
 .navbar .largeur-cd{
     display: flex;
     align-items: center;
@@ -66,7 +63,7 @@ section .titre{
 }
 
 .navbar .logo a img{
-    height: 40px;
+    height: 55px;
     margin-top: 5px;
     width: auto;
 }
@@ -193,7 +190,7 @@ section .titre{
 /*/////////////////////////////////////////////////   education section styling   /////////////////////////////////////////////////////////*/
 .education, .projects{
     color:#fff;
-    background: #222;
+    background-color: #222;
     
 }
 .education .titre,
@@ -240,6 +237,13 @@ section .titre{
     justify-content:center;
     transition: all 0.5s ease;
 }
+.education .carousel .card .box .border{
+    margin-top: 20px;
+    border: 2px solid #fff;
+    border-radius: 12px;
+    padding: 12px 25px;
+    background-color: #444;
+}
 .education .carousel .card .box h4{
     font-style: italic;
     font-weight: 500;
@@ -277,7 +281,7 @@ section .titre{
 }
 
 .education .carousel .card .box a{
-    margin-top: 5px;
+    margin-top: 10px;
     color: #fff;
     text-decoration: underline;
     transition: all 0.5 ease;
@@ -372,11 +376,15 @@ section .titre{
     margin-left: 18px;
     
 }
-
-.projects .serv-content .card:hover .text{
+.projects .serv-content .card a{
+    margin-top: 10px;
     color: #fff;
+    text-decoration: underline;
+    transition: all 0.5 ease;
 }
-
+.projects .serv-content .card a:hover{
+    text-decoration: none;
+}
 .projects .serv-content .card .text{
     color: #fff;
     font-family: 'Exo 2', sans-serif;
@@ -410,4 +418,90 @@ section .titre{
 }
 .fa-passport{
     color: #00626f;
+}
+
+/* /////////////////////////////////////////////////////// style of the footer //////////////////////////////////////////////////////////*/
+footer{
+    background: #333;
+    padding: 15px 23px;
+    color: #fff;
+    text-align: center;
+}
+.social-media, .social-media2{
+    list-style: none;
+    margin: 20px 20px;
+    padding: 2%;
+    margin-left: 35%;
+    margin-right: 35%;
+    font-size: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.social-media2{
+    margin-left: 15%;
+    margin-top: 50px;
+}
+.fab{
+    color: lightgrey;
+}
+
+.fa-github:hover{
+    color: grey;
+}
+.fa-linkedin:hover{
+    color: #0077b5;
+}
+.fa-behance:hover{
+    color: #053eff;
+}
+.fa-pinterest:hover{
+    color: #c8232c;
+}
+.fa-twitter:hover{
+    color: #1DA1F2;
+}
+footer .inliner{
+    text-align: center;
+    margin-bottom: 60px;
+    
+}
+footer .inliner .awsome{
+    margin-left: 11%;
+    margin-right: 11%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    border: 2px solid #3c9012;
+    padding: 13px 60px;
+}
+footer .inliner .awsome .fas{
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #3c9012;
+}
+footer .inliner .awsome .torr{
+    font-weight: 600;
+    font-size: 20px;
+    color: #3c9012;
+    font-family: 'Exo 2', sans-serif;
+}
+footer .inliner .awsome .sub-title{
+    font-family: 'Exo 2', sans-serif;
+}
+
+footer .signature {
+    margin: 0;
+    padding: 0 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #444;
+    height: 60px
+}
+
+.saad {
+    font-weight: 600;
+    color: #3c9012;
+    margin-left: 5px;
 }
