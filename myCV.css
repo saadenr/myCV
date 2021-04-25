@@ -198,7 +198,7 @@ section .titre{
 /*/////////////////////////////////////////////////   education section styling   /////////////////////////////////////////////////////////*/
 .education, .projects{
     color:#fff;
-    background: darkblue;
+    background: #222;
     
 }
 .education .titre,
@@ -225,7 +225,7 @@ section .titre{
     color: #111;
 }
 .education .carousel .card{
-    background: #222;
+    background: #333;
     padding: 25px 35px;
     text-align: center;
     overflow: hidden;
@@ -246,29 +246,48 @@ section .titre{
 .education .carousel .card .box h4{
     font-style: italic;
     font-weight: 500;
-    font-size: 17px;
+    font-size: 19px;
+    color: #3c9012;
 }
 .education .carousel .card .box p{
     font-style: italic;
-    font-size: 15px;
+    font-size: 17px;
+}
+.education .carousel .card .box .clarify{
+    text-align: justify;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 14px;
+    margin-top: 5px;
+    border: 1px solid #3c9012;
+    padding: 7px 10px;
 }
 .education .carousel .card .text{
     font-size: 25px;
     font-weight: 700;
-    margin: 10px 0 7px 0;
+    margin: 25px 0 7px 0;
     font-family: 'Exo 2', sans-serif;
 }
 .education .carousel .card img{
     height: 150px;
     width: auto;
     object-fit: cover;
-    border: 5px solid #111;
+    border: 3px solid #111;
     transition: all 0.3s ease;
 }
 .education .carousel .card:hover img{
     border-color: #3c9012;
 }
 
+.education .carousel .card .box a{
+    margin-top: 5px;
+    color: #fff;
+    text-decoration: underline;
+    transition: all 0.5 ease;
+}
+.education .carousel .card .box a:hover{
+    text-decoration: none;
+}
 /*///////////////////////////////////////////////    skills section styling   //////////////////////////////////////////////////////////////*/
 .skills .hardsoft{
     display: flex;
