@@ -16,9 +16,9 @@ html{
 section{
     padding: 100px 0;
 }
-.max-width{
+.largeur-cd{
     max-width: 1300px;
-    padding: 0 80px;
+    padding: 0 70px;
     margin: auto;
 }
 .about, .projects, .skills, .education, .contact, footer{
@@ -50,7 +50,7 @@ section .titre{
     position: fixed;
     width: 100%;
     z-index: 999;
-    padding: 5px 0;
+    padding: 6px 0;
     font-family: 'Exo 2', sans-serif;
     transition: all 0.3s ease;
     background-color: #3c9012;
@@ -59,19 +59,14 @@ section .titre{
     padding: 15px 0;
     background: #3c9012;
 }
-.navbar .max-width{
+.navbar .largeur-cd{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.navbar .logo a{
-    color: #111;
-    font-size: 35px;
-    font-weight: 600;
-}
 
 .navbar .logo a img{
-    height: 50px;
+    height: 40px;
     margin-top: 5px;
     width: auto;
 }
@@ -84,7 +79,7 @@ section .titre{
     color: #fff;
     font-size: 18px;
     font-weight: 500;
-    margin-left: 25px;
+    margin-left: 35px;
     transition: color 0.3s ease;
 }
 
@@ -114,7 +109,7 @@ section .titre{
     background-attachment: fixed;
     font-family: 'Exo 2', sans-serif;
 }
-.home .max-width{
+.home .largeur-cd{
     margin: auto 0 auto 30px;
 }
 
@@ -232,6 +227,8 @@ section .titre{
     transition: all 0.3s ease;
     border: 3px solid #111;
     margin-bottom: 20px;
+    border: 3px solid #fff;
+    border-radius: 12px;
 }
 .education .carousel .card:hover{
     border: 3px solid #3c9012;
@@ -297,49 +294,120 @@ section .titre{
     width: calc(520px - 10px);
     background-color: lightgrey;
     border-radius: 20px;
- }
- .skills .hardsoft .softskills h4{
+}
+.skills .hardsoft .softskills h4{
     font-family: 'Exo 2', sans-serif;
     font-size: 18px;
     margin-bottom: 7px;
     font-weight: 600;
- }
- .Pr-Ae, .catia, .web, .Ps-Ai, .arabic, .frensh, .english, .spanish{
+}
+.Pr-Ae, .catia, .web, .Ps-Ai, .arabic, .frensh, .english, .spanish{
     text-align: center;
     font-weight: 600;
     color: white;
     border-radius: 20px;
     margin-bottom: 15px;
- }
- .web {
+}
+.web {
     width: 90%;
     background-color: #3c9012;
- }
- .catia {
+}
+.catia {
     width: 60%;
     background-color: #111;
- }
- .Pr-Ae {
+}
+.Pr-Ae {
     width: 40%;
     background-color: #111;
- }
- .Ps-Ai {
+}
+.Ps-Ai {
     width: 80%;
     background-color: #3c9012;
- }
- .arabic {
+}
+.arabic {
     width: 99%;
     background-color: #111;
- }
- .frensh{
+}
+.frensh{
     width: 80%;
     background-color: #111;
- }
- .english{
+}
+.english{
     width: 80%;
     background-color: #3c9012;
- }
- .spanish{
+}
+.spanish{
     width: 80%;
     background-color: #3c9012;
- }
+}
+
+/* ///////////////////////////////////////////////  projects section styling   ////////////////////////////////////////////////////////////*/
+.projects, .education{
+    color:#fff;
+    background: #111;
+    
+}
+.projects .titre,
+.education .titre{
+    border: 3px solid #fff;
+}
+.projects .serv-content .card{
+    width: calc(50% - 30px);
+    height: 400px;
+    background: #3c9012;
+    text-align: center;
+    padding: 20px 25px;
+    transition: all 0.6s ease;
+    border: 3px solid #fff;
+    border-radius: 12px;
+}
+
+.projects .serv-content .card .box{
+    transition: all 0.6s ease;
+}
+
+.projects .serv-content .card i{
+    font-size: 50px;
+    transition: color 0.6s ease;
+    margin-left: 18px;
+    
+}
+
+.projects .serv-content .card:hover .text{
+    color: #fff;
+}
+
+.projects .serv-content .card .text{
+    color: #fff;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    margin: 40px 0 7px 0;
+    text-transform: uppercase;
+}
+
+.projects .serv-content .card p{
+    margin-top: 15px;
+    text-align: justify;
+}
+.projects .serv-content .fa-bootstrap{
+    color: #080135;
+}
+.projects .serv-content .fa-js{
+    color: #f0db4f;
+}
+.projects .serv-content .fa-css3-alt{
+    color: #264de4;
+}
+.projects .serv-content .fa-html5{
+    color: #FF5733;
+}
+.fa-copyright{
+    color: darkblue;
+}
+.fa-id-card{
+    color: #444;
+}
+.fa-passport{
+    color: #00626f;
+}
