@@ -194,7 +194,18 @@ section .titre{
     margin-left: 20px;
 }
 
+
 /*/////////////////////////////////////////////////   education section styling   /////////////////////////////////////////////////////////*/
+.education, .projects{
+    color:#fff;
+    background: darkblue;
+    
+}
+.education .titre,
+.projects .titre{
+    border: 3px solid #fff;
+}
+
 .education .carousel h2{
     text-align: center;
     font-size: 26px;
@@ -257,3 +268,59 @@ section .titre{
 .education .carousel .card:hover img{
     border-color: #3c9012;
 }
+
+/*///////////////////////////////////////////////    skills section styling   //////////////////////////////////////////////////////////////*/
+.skills .hardsoft{
+    display: flex;
+    justify-content: space-between;
+}
+.skills .hardsoft .container{
+    width: calc(520px - 10px);
+    background-color: lightgrey;
+    border-radius: 20px;
+ }
+ .skills .hardsoft .softskills h4{
+    font-family: 'Exo 2', sans-serif;
+    font-size: 18px;
+    margin-bottom: 7px;
+    font-weight: 600;
+ }
+ .Pr-Ae, .catia, .web, .Ps-Ai, .arabic, .frensh, .english, .spanish{
+    text-align: center;
+    font-weight: 600;
+    color: white;
+    border-radius: 20px;
+    margin-bottom: 15px;
+ }
+ .web {
+    width: 90%;
+    background-color: #3c9012;
+ }
+ .catia {
+    width: 60%;
+    background-color: #111;
+ }
+ .Pr-Ae {
+    width: 40%;
+    background-color: #111;
+ }
+ .Ps-Ai {
+    width: 80%;
+    background-color: #3c9012;
+ }
+ .arabic {
+    width: 99%;
+    background-color: #111;
+ }
+ .frensh{
+    width: 80%;
+    background-color: #111;
+ }
+ .english{
+    width: 80%;
+    background-color: #3c9012;
+ }
+ .spanish{
+    width: 80%;
+    background-color: #3c9012;
+ }
