@@ -193,3 +193,67 @@ section .titre{
 .about .about-main .part-1 a .fa-download{
     margin-left: 20px;
 }
+
+/*/////////////////////////////////////////////////   education section styling   /////////////////////////////////////////////////////////*/
+.education .carousel h2{
+    text-align: center;
+    font-size: 26px;
+    font-weight: 500;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    margin-bottom: 30px;
+    margin-top: 40px;
+    margin-right: 32%;
+    margin-left: 32%;
+    border-left: 3px solid #fff;
+    border-right: 3px solid #fff;
+    border-radius: 5px;
+    padding: 6px 6px;
+    background-color: #3c9012;
+    color: #111;
+}
+.education .carousel .card{
+    background: #222;
+    padding: 25px 35px;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    border: 3px solid #111;
+    margin-bottom: 20px;
+}
+.education .carousel .card:hover{
+    border: 3px solid #3c9012;
+}
+.education .carousel .card .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    transition: all 0.5s ease;
+}
+.education .carousel .card .box h4{
+    font-style: italic;
+    font-weight: 500;
+    font-size: 17px;
+}
+.education .carousel .card .box p{
+    font-style: italic;
+    font-size: 15px;
+}
+.education .carousel .card .text{
+    font-size: 25px;
+    font-weight: 700;
+    margin: 10px 0 7px 0;
+    font-family: 'Exo 2', sans-serif;
+}
+.education .carousel .card img{
+    height: 150px;
+    width: auto;
+    object-fit: cover;
+    border: 5px solid #111;
+    transition: all 0.3s ease;
+}
+.education .carousel .card:hover img{
+    border-color: #3c9012;
+}
