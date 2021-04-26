@@ -98,7 +98,7 @@ section .titre{
 /*////////////////////////////////////////////////   home section styling   ////////////////////////////////////////////////////////////////*/
 .home{
     display: flex;
-    background: url("images/banner3.jpg") no-repeat center;
+    background: url("images/banner2.jpg") no-repeat center;
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -151,7 +151,7 @@ section .titre{
     object-fit: cover;
     border-radius: 6px;
     box-shadow: 5px 5px 15px 5px lightslategrey;
-    border: 5px solid #111;
+    border: 3px solid #111;
     
 }
 .about .about-main .part-1{
@@ -190,7 +190,7 @@ section .titre{
 /*/////////////////////////////////////////////////   education section styling   /////////////////////////////////////////////////////////*/
 .education, .projects{
     color:#fff;
-    background-color: #222;
+    background-color: #999;
     
 }
 .education .titre,
@@ -420,6 +420,102 @@ section .titre{
     color: #00626f;
 }
 
+/*///////////////////////////////////////////////////////   contact section styling  x///////////////////////////////////////////////////////*/
+
+.contact .contact-content .flex{
+    width: calc(50% - 30px);
+}
+.contact .contact-content .flex .text,
+.contact .contact-content .location .text{
+    font-family: 'Exo 2', sans-serif;
+}
+
+.contact .part-1 form .champs{
+    display: flex;
+}
+.contact .part-1 form .champ,
+.contact .part-1 form .champs .champ{
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.contact .part-1 form .zone-texte{
+    height: 80px;
+    width: 100%;
+}
+.contact .part-1 form .lastname{
+    margin-right: 10px;
+}
+.contact .part-1 form .firstname{
+    margin-left: 10px;  
+}
+.contact .part-1 form .champ input,
+.contact .part-1 form .zone-texte textarea{
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    background:#444;
+    border: 3px solid #222;
+    border-radius: 2px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: 'Baloo Chettan 2', cursive;
+    transition: all 0.3s ease;
+}
+.contact .part-1 form .champ input:focus,
+.contact .part-1 form .zone-texte textarea:focus{
+    border: 3px solid #3c9012;
+}
+.contact .part-1 form .zone-texte textarea{
+    padding-top: 10px;
+    resize: none;
+}
+.contact .part-1 form .poussoir{
+    height: 47px;
+    width: 170px;
+    display: inline-block;
+
+}
+.contact .part-1 form .poussoir .submit, .reset{
+    width: 100%;
+    height: 100%;
+    border: 2px solid #3c9012;
+    background: #3c9012;
+    color: #fff;
+    outline: none;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.contact .part-1 form .poussoir .reset{
+    border: 2px solid #111;
+    background: #111;
+    margin-left: 195px;
+}
+.contact .part-1 form .poussoir .submit:hover{
+    color: #3c9012;
+    background: none;
+}
+.contact .part-1 form .poussoir .reset:hover{
+    color: #111;
+    background: none;
+}
+.fa-paper-plane, .fa-undo{
+    margin-left: 6px;
+}
+.contact .contact-content .part-1 .text,
+.contact .contact-content .location .text{
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.contact .contact-content .map{
+    border: 2px solid #111;
+    border-radius: 2.5px;
+}
 /* /////////////////////////////////////////////////////// style of the footer //////////////////////////////////////////////////////////*/
 footer{
     background: #333;
