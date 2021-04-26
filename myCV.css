@@ -137,10 +137,6 @@ section .titre{
     background: none;
     border: 2px solid #3c9012;
 }
-.fa-level-down-alt{
-    margin-left: 20px;
-}
-
 /*////////////////////////////////////////////////   about section styling   //////////////////////////////////////////////////////////////*/
 .about .about-main .part-2{
     width: 35%;
@@ -493,7 +489,7 @@ section .titre{
 .contact .part-1 form .poussoir .reset{
     border: 2px solid #111;
     background: #111;
-    margin-left: 195px;
+    margin-left: 20px;
 }
 .contact .part-1 form .poussoir .submit:hover{
     color: #3c9012;
@@ -601,3 +597,257 @@ footer .signature {
     color: #3c9012;
     margin-left: 5px;
 }
+
+
+/*//////////////////////////////////////////// responsive media query start //////////////////////////////////////////////*/
+
+@media (max-width: 1300px) {
+    .home .largeur-cd{
+        margin-left: 0px;
+    }
+    .social-media{
+        margin-left: 25%;
+        margin-right: 25%;
+
+    }
+
+    .skills .hardsoft .container{
+        width: calc(450px - 10px);
+     }
+     .projects .serv-content .card{
+        height: 480px;
+    }
+
+}
+
+@media (max-width: 1250px) {
+    .contact .contact-content .map iframe{
+        width: 480px;
+    }
+    .skills .hardsoft .container{
+        width: calc(410px - 10px);
+     }
+}
+
+@media (max-width: 1104px) {
+    .navbar .lista{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: #111;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+    .navbar .lista.active{
+        left: 0;
+    }
+    .navbar .lista li{
+        display: block;
+    }
+    .navbar .lista li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+    .about .about-main .part-2 img{
+        height: 310px;
+        width: 310px;
+    }
+    .contact .contact-content .map iframe{
+        width: 430px;
+    }
+    .skills .hardsoft .container{
+        width: calc(390px - 5px);
+     }
+}
+
+@media (max-width: 991px) {
+    .largeur-cd{
+        padding: 0 50px;
+    }
+    .contact .contact-content .map iframe{
+        width: 400px;
+    }
+    .skills .hardsoft .container{
+        width: calc(380px - 5px);
+     }
+     footer .inliner .awsome{
+        flex-direction: column;
+    }
+     footer .inliner .awsome .sub-title{
+        font-size: 14px;
+        }
+}
+@media (max-width: 900px){
+
+    .home .home-main .big-text{
+        font-size: 65px;
+    }
+    .home .home-main .med-text{
+        font-size: 50px;
+    }
+    .home .home-main a{
+        font-size: 23px;
+        padding: 10px 30px;
+    }
+    .largeur-cd{
+        max-width: 930px;
+    }
+    .about .about-main .flex{
+        width: 100%;
+    }
+    .about .about-main .part-2{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 50px;
+    }
+    .about .about-main .part-1{
+        flex: 100%;
+    }
+    .projects .serv-content .card{
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+        height: 600px;
+    }
+    
+    .contact .contact-content .flex{
+        width: 100%;
+        margin-bottom: 35px;
+    }
+    .about .about-main .part-2 img{
+        margin-top: 100px;
+        height: 350px;
+        width: 350px;
+        
+    }
+    
+    .contact .contact-content .map iframe{
+        width: 500px;
+    }
+    .skills .hardsoft .container{
+        width: calc(350px - 5px);
+     }
+    
+    footer .inliner .awsome .fas{
+        font-size: 25px;
+    }
+    footer .inliner .awsome .torr{
+        font-weight: 600;
+        font-size: 20px;
+    }
+    footer .inliner .awsome .sub-title{
+        font-size: 13px;
+    }
+    footer .signature {
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 690px) {
+    .largeur-cd{
+        padding: 0 23px;
+    }
+    .home .home-main .big-text{
+        font-size: 55px;
+    }
+    .home .home-main .med-text{
+        font-size: 45px;
+    }
+    .home .home-main a{
+        font-size: 20px;
+    }
+    .projects .serv-content .card{
+        width: 100%;
+        height: 450px;
+    }
+    
+    .contact .contact-content .map iframe{
+        width: 620px;
+    }
+    .skills .hardsoft{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    footer .inliner .awsome{
+        width: 100%;
+       margin-left: 5px;
+    }
+    footer .inliner .awsome .fas{
+    font-size: 20px;
+    }
+    footer .inliner .awsome .torr{
+    font-weight: 600;
+    font-size: 18px;
+    }
+    footer .inliner .awsome .sub-title{
+        font-size: 12px;
+    }
+    footer .signature {
+        flex-direction: column;
+        font-size: 15px;
+    }
+
+}
+@media (max-width: 500px) {
+    .home .home-main .big-text{
+        font-size: 40px;
+    }
+    .home .home-main .med-text{
+        font-size: 35px;
+    }
+    .about .about-main .part-1 .text,
+    .skills .skills-content .part-2 .text{
+        font-size: 19px;
+    }
+    .education .carousel .card img{
+        width: auto;
+        height: 120px;
+    }
+    .contact .part-2 form .champs{
+        flex-direction: column;
+    }
+    .contact .part-2 form .lastname,
+    .contact .part-2 form .firstname{
+        margin: 0;
+    }
+    .social-media{
+        margin-left: 25%;
+        margin-right: 25%;
+
+    }
+    
+    .contact .contact-content .map iframe{
+        width: 450px;
+    }
+    .home .home-main a{
+        font-size: 15px;
+    }
+
+}
+
+@media (max-width: 400px){
+   
+    .education .carousel .card img{
+        width: auto;
+        height: 100px;
+    }
+    .about .about-main .part-2 img{
+        height: 250px;
+        width: 250px;
+    }
+    .home .home-main a{
+        font-size: 13px;
+    }
+    .contact .contact-content .map iframe{
+        width: 350px;
+    }
+    .skills .hardsoft .container{
+        width: calc(340px - 5px);
+     }
+}
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
