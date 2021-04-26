@@ -1,5 +1,5 @@
 /*  import google fonts */
-@import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@400;500;600;700;800&family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
 *{
@@ -22,13 +22,13 @@ section{
     margin: auto;
 }
 .about, .projects, .skills, .education, .contact, footer{
-    font-family: 'Baloo Chettan 2', cursive;
+    font-family: 'Cairo', sans-serif;
     font-size: 19px;
 }
 .about .about-main, 
-.projects .serv-content,
+.projects .proj-main,
 .skills .skills-content,
-.contact .contact-content{
+.contact .ctc-main{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -50,7 +50,6 @@ section .titre{
     position: fixed;
     width: 100%;
     z-index: 999;
-    /* padding: 6px 0; */
     font-family: 'Exo 2', sans-serif;
     transition: all 0.3s ease;
     background-color: #3c9012;
@@ -206,7 +205,7 @@ section .titre{
     border: 3px solid #fff;
 }
 
-.education .carousel h2{
+.education .cellule h2{
     text-align: center;
     font-size: 26px;
     font-weight: 500;
@@ -224,7 +223,7 @@ section .titre{
     background-color: #3c9012;
     color: #111;
 }
-.education .carousel .card{
+.education .cellule .card{
     background: #333;
     padding: 25px 35px;
     text-align: center;
@@ -235,34 +234,34 @@ section .titre{
     border: 3px solid #fff;
     border-radius: 12px;
 }
-.education .carousel .card:hover{
+.education .cellule .card:hover{
     border: 3px solid #3c9012;
 }
-.education .carousel .card .box{
+.education .cellule .card .box{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content:center;
     transition: all 0.5s ease;
 }
-.education .carousel .card .box .border{
+.education .cellule .card .box .border{
     margin-top: 20px;
     border: 2px solid #fff;
     border-radius: 12px;
     padding: 12px 25px;
     background-color: #444;
 }
-.education .carousel .card .box h4{
+.education .cellule .card .box h4{
     font-style: italic;
     font-weight: 500;
     font-size: 19px;
     color: #3c9012;
 }
-.education .carousel .card .box p{
+.education .cellule .card .box p{
     font-style: italic;
     font-size: 17px;
 }
-.education .carousel .card .box .clarify{
+.education .cellule .card .box .clarify{
     text-align: justify;
     margin-left: 50px;
     margin-right: 50px;
@@ -271,30 +270,30 @@ section .titre{
     border: 1px solid #3c9012;
     padding: 7px 10px;
 }
-.education .carousel .card .text{
+.education .cellule .card .text{
     font-size: 25px;
     font-weight: 700;
     margin: 25px 0 7px 0;
     font-family: 'Exo 2', sans-serif;
 }
-.education .carousel .card img{
+.education .cellule .card img{
     height: 150px;
     width: auto;
     object-fit: cover;
     border: 3px solid #111;
     transition: all 0.3s ease;
 }
-.education .carousel .card:hover img{
+.education .cellule .card:hover img{
     border-color: #3c9012;
 }
 
-.education .carousel .card .box a{
+.education .cellule .card .box a{
     margin-top: 10px;
     color: #fff;
     text-decoration: underline;
     transition: all 0.5 ease;
 }
-.education .carousel .card .box a:hover{
+.education .cellule .card .box a:hover{
     text-decoration: none;
 }
 /*///////////////////////////////////////////////    skills section styling   //////////////////////////////////////////////////////////////*/
@@ -349,7 +348,7 @@ section .titre{
     background-color: #3c9012;
 }
 .spanish{
-    width: 80%;
+    width: 30%;
     background-color: #3c9012;
 }
 
@@ -363,9 +362,9 @@ section .titre{
 .education .titre{
     border: 3px solid #fff;
 }
-.projects .serv-content .card{
+.projects .proj-main .card{
     width: calc(50% - 30px);
-    height: 400px;
+    height: 450px;
     background: #3c9012;
     text-align: center;
     padding: 20px 25px;
@@ -374,26 +373,26 @@ section .titre{
     border-radius: 12px;
 }
 
-.projects .serv-content .card .box{
+.projects .proj-main .card .box{
     transition: all 0.6s ease;
 }
 
-.projects .serv-content .card i{
+.projects .proj-main .card i{
     font-size: 50px;
     transition: color 0.6s ease;
     margin-left: 18px;
     
 }
-.projects .serv-content .card a{
+.projects .proj-main .card a{
     margin-top: 10px;
     color: #fff;
     text-decoration: underline;
     transition: all 0.5 ease;
 }
-.projects .serv-content .card a:hover{
+.projects .proj-main .card a:hover{
     text-decoration: none;
 }
-.projects .serv-content .card .text{
+.projects .proj-main .card .text{
     color: #fff;
     font-family: 'Exo 2', sans-serif;
     font-size: 25px;
@@ -402,20 +401,20 @@ section .titre{
     text-transform: uppercase;
 }
 
-.projects .serv-content .card p{
+.projects .proj-main .card p{
     margin-top: 15px;
     text-align: justify;
 }
-.projects .serv-content .fa-bootstrap{
+.projects .proj-main .fa-bootstrap{
     color: #080135;
 }
-.projects .serv-content .fa-js{
+.projects .proj-main .fa-js{
     color: #f0db4f;
 }
-.projects .serv-content .fa-css3-alt{
+.projects .proj-main .fa-css3-alt{
     color: #264de4;
 }
-.projects .serv-content .fa-html5{
+.projects .proj-main .fa-html5{
     color: #FF5733;
 }
 .fa-copyright{
@@ -430,11 +429,11 @@ section .titre{
 
 /*///////////////////////////////////////////////////////   contact section styling  x///////////////////////////////////////////////////////*/
 
-.contact .contact-content .flex{
+.contact .ctc-main .flex{
     width: calc(50% - 30px);
 }
-.contact .contact-content .flex .text,
-.contact .contact-content .location .text{
+.contact .ctc-main .flex .text,
+.contact .ctc-main .location .text{
     font-family: 'Exo 2', sans-serif;
 }
 
@@ -468,7 +467,7 @@ section .titre{
     outline: none;
     padding: 0 15px;
     font-size: 17px;
-    font-family: 'Baloo Chettan 2', cursive;
+    font-family: 'Cairo', sans-serif;
     transition: all 0.3s ease;
 }
 .contact .part-1 form .champ input:focus,
@@ -514,13 +513,13 @@ section .titre{
 .fa-paper-plane, .fa-undo{
     margin-left: 6px;
 }
-.contact .contact-content .part-1 .text,
-.contact .contact-content .location .text{
+.contact .ctc-main .part-1 .text,
+.contact .ctc-main .location .text{
     margin-bottom: 15px;
     font-size: 20px;
     font-weight: 500;
 }
-.contact .contact-content .map{
+.contact .ctc-main .map{
     border: 2px solid #111;
     border-radius: 2.5px;
 }
@@ -626,14 +625,14 @@ footer .signature {
     .skills .hardsoft .container{
         width: calc(450px - 10px);
      }
-     .projects .serv-content .card{
+     .projects .proj-main .card{
         height: 480px;
     }
 
 }
 
 @media (max-width: 1250px) {
-    .contact .contact-content .map iframe{
+    .contact .ctc-main .map iframe{
         width: 480px;
     }
     .skills .hardsoft .container{
@@ -676,7 +675,7 @@ footer .signature {
         height: 310px;
         width: 310px;
     }
-    .contact .contact-content .map iframe{
+    .contact .ctc-main .map iframe{
         width: 430px;
     }
     .skills .hardsoft .container{
@@ -688,7 +687,7 @@ footer .signature {
     .largeur-cd{
         padding: 0 50px;
     }
-    .contact .contact-content .map iframe{
+    .contact .ctc-main .map iframe{
         width: 400px;
     }
     .skills .hardsoft .container{
@@ -727,13 +726,13 @@ footer .signature {
     .about .about-main .part-1{
         flex: 100%;
     }
-    .projects .serv-content .card{
+    .projects .proj-main .card{
         width: calc(50% - 10px);
         margin-bottom: 20px;
-        height: 600px;
+        height: 700px;
     }
     
-    .contact .contact-content .flex{
+    .contact .ctc-main .flex{
         width: 100%;
         margin-bottom: 35px;
     }
@@ -744,7 +743,7 @@ footer .signature {
         
     }
     
-    .contact .contact-content .map iframe{
+    .contact .ctc-main .map iframe{
         width: 500px;
     }
     .skills .hardsoft .container{
@@ -781,12 +780,12 @@ footer .signature {
     .home .home-main a{
         font-size: 20px;
     }
-    .projects .serv-content .card{
+    .projects .proj-main .card{
         width: 100%;
         height: 450px;
     }
     
-    .contact .contact-content .map iframe{
+    .contact .ctc-main .map iframe{
         width: 620px;
     }
     .skills .hardsoft{
@@ -825,7 +824,7 @@ footer .signature {
     .skills .skills-content .part-2 .text{
         font-size: 19px;
     }
-    .education .carousel .card img{
+    .education .cellule .card img{
         width: auto;
         height: 120px;
     }
@@ -842,7 +841,7 @@ footer .signature {
 
     }
     
-    .contact .contact-content .map iframe{
+    .contact .ctc-main .map iframe{
         width: 450px;
     }
     .home .home-main a{
@@ -853,7 +852,7 @@ footer .signature {
 
 @media (max-width: 400px){
    
-    .education .carousel .card img{
+    .education .cellule .card img{
         width: auto;
         height: 100px;
     }
@@ -864,7 +863,7 @@ footer .signature {
     .home .home-main a{
         font-size: 13px;
     }
-    .contact .contact-content .map iframe{
+    .contact .ctc-main .map iframe{
         width: 350px;
     }
     .skills .hardsoft .container{
